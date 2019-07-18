@@ -104,14 +104,11 @@
                                                             style="color: #505050;font-family: Arial;font-size: 14px;line-height: 21px;text-align: left;">
                                                             <h3 class="h3"
                                                                 style="color: #202020;display: block;font-family: Arial;font-size: 26px;font-weight: bold;line-height: 26px;text-align: left;">
-                                                                This template is used to opt-in prospects who have a
-                                                                status opted-out on completing a form.</h3>
+                                                                Customize this layout to let opted out prospects resubscribe to your marketing emails.</h3>
 
-                                                            <p>Dear {{Recipient.FirstName}},</p>
+                                                            <p>Hi {{Recipient.FirstName}},</p>
 
-                                                            <p>Our records indicate that you have unsubscribed from
-                                                                receiving our emails. To continue receiving
-                                                                communication from us, please click the link below.</p>
+                                                            <p>We heard you’d like to receive our emails again. To resubscribe, follow this link:</p>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -121,7 +118,7 @@
                                                         valign="top">
                                                         <div
                                                             style="color: #505050;font-family: Arial;font-size: 14px;line-height: 21px;text-align: left;">
-                                                            <a href="{{Resubscribe}}">Re-Opt-In</a></div>
+                                                            <a href="{{Resubscribe}}" rel="nofollow noreferrer">Resubscribe Now</a></div>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -153,10 +150,12 @@
                                                                             pardot-region="std_utility"
                                                                             style="color: #707070;font-family: Arial;font-size: 12px;line-height: 15px;text-align: center;">
                                                                             <a href="{{Unsubscribe}}"
-                                                                                style="color: #336699;font-weight: normal;text-decoration: underline;">unsubscribe
+                                                                                style="color: #336699;font-weight: normal;text-decoration: underline;"
+                                                                                rel="nofollow noreferrer">unsubscribe
                                                                                 from all emails</a> | <a
                                                                                 href="{{EmailPreferenceCenter}}"
-                                                                                style="color: #336699;font-weight: normal;text-decoration: underline;">update
+                                                                                style="color: #336699;font-weight: normal;text-decoration: underline;"
+                                                                                rel="nofollow noreferrer">update
                                                                                 subscription preferences</a></div>
                                                                     </td>
                                                                 </tr>
